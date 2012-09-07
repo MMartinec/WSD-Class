@@ -1,6 +1,6 @@
-/*@charset "UTF-8";
+@charset "UTF-8";
 /* CSS Document */
-<style type="text/css">
+
 @import url("webfonts/HarabaraHand/stylesheet.css");
 
 /*Colors Green #88A33E Raspberry #8E3557 light brown #C2BD86*/
@@ -30,7 +30,7 @@ body {
 	-webkit-border-radius: .6em;
 	-moz-border-radius: .6em;
 	border-radius: .6em;
-	background-image: url(images/background.png);
+	background-image: url(../images/background.png);
 	background-repeat: repeat-x;
 	background-position: 370px 50px;
 }
@@ -179,10 +179,11 @@ a img { /* this gets rid of blue border around images */
 /* end events section*/
 
 .wrapper aside .Hours ol {
-	list-style: url(images/liststyleimage.png);
+	list-style: url(../images/liststyleimage.png);
 	text-align: justify;
-	margin-left: 40px;
+	margin-left: 45px;
 	padding-bottom: 30px;
+	margin-right: 10px;
 }
 /* end aside section*/
 
@@ -196,9 +197,9 @@ a img { /* this gets rid of blue border around images */
 	-webkit-border-radius: .6em;
 	-moz-border-radius: .6em;
 	border-radius: .6em;
-	background-image: url(images/background.png);
-	-moz-background-image: url(images/background.png);
-	-webkit-background-image: url(images/background.png);
+	background-image: url(../images/background.png);
+	-moz-background-image: url(../images/background.png);
+	-webkit-background-image: url(../images/background.png);
 	background-repeat: no-repeat;
 	background-position: -85px -100px;
 }
@@ -312,8 +313,8 @@ wrapper .content .gallery ul li a:active {
 	-moz-border-radius: .6em;
 	border-radius: .6em;
 	clear: both;
-	background-image: url(images/footerbackground.png);
-	background-repeat: no-repeat;	
+	background-image: url(../images/footerbackground.png);
+	background-repeat: no-repeat;
 }
 
 .wrapper footer ul {
@@ -345,5 +346,5 @@ wrapper .content .gallery ul li a:active {
 }
 
 
-</style>
+
 
