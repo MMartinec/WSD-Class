@@ -1,0 +1,349 @@
+/*@charset "UTF-8";
+/* CSS Document */
+<style type="text/css">
+@import url("webfonts/HarabaraHand/stylesheet.css");
+
+/*Colors Green #88A33E Raspberry #8E3557 light brown #C2BD86*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, "Times New Roman", Times, serif, HarabaraHand;
+	font-size: 12px;
+	background-color: #8E3557;
+}
+
+/* begin wrapper section*/
+.wrapper {
+	width: 80%;
+	max-width: 1260px;
+	min-width: 780px;
+	margin: 0 auto;
+}
+
+.wrapper .header {
+	text-indent: -9999px;
+	background-color: #88A33E;
+	margin: 0;
+	padding: 0;
+	height: 120px;
+	-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
+	background-image: url(images/background.png);
+	background-repeat: repeat-x;
+	background-position: 370px 50px;
+}
+.wrapper .header a img {
+	margin: 0;
+	padding: 0;
+}
+/* end wrapper section*/
+
+/* begin h,ul,ol...misc. section section*/
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+
+
+h1, h2 {
+	font-family: HarabaraHand;
+	text-align: center;
+	font-weight: bold;
+	margin: 20px;	
+}
+
+h2 {
+text-shadow:4px 4px 2px gray;
+}
+
+h4 {
+	text-shadow: 4px 4px 2px gray;
+	margin-top: 20px;
+	padding: 20px 0px 0px;
+}
+a img { /* this gets rid of blue border around images */
+	border: none;
+}
+
+
+/* end h,ul,ol...misc. section section*/
+
+/* begin nav section*/
+.wrapper nav {
+	background-color: #8E3557;
+}
+
+.button {
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: inline-block;
+    font: 14px/100% Arial,Helvetica,sans-serif;
+    margin: 0 2px;
+    outline: medium none;
+    padding: 0.5em 2em 0.55em;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    vertical-align: baseline;
+	
+	
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+
+.green {
+    background: -moz-linear-gradient(center top , #7DB72F, #88A33E) repeat scroll 0 0 transparent;
+    border: 1px solid #538312;
+    color: #E8F0DE;
+	
+}
+/* end nav section*/
+
+
+/* begin aside section*/
+.wrapper aside {
+	float: right;
+	width: 30%;
+	background-color: #C2BD86;
+	padding-bottom: 110px;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	-webkit-box-shadow: .6em 4px #666;
+	-moz-box-shadow: .6em #666;
+	box-shadow: .6em #666;
+}
+.wrapper aside .Hours h4 {
+	font-family: HarabaraHand;
+	text-align: center;
+	
+}
+.wrapper aside #events ul li {
+	display: block;
+}
+
+
+/* begin events section*/
+.wrapper aside #events ul {
+	list-style: none;
+	color: #8E3557;
+	letter-spacing: 0.3em;
+	background-color: #88A33E;
+-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
+	
+}
+.wrapper aside .Hours {
+	background-color: #88A33E;
+	
+}
+
+.wrapper aside #events ul li {
+	font-family: HarabaraHand;
+	font-size: 18px;
+	color: #8E3557;
+	line-height: 35px;
+	margin-right: 50px;
+	text-align: center;
+	text-decoration: none;
+		
+}
+
+.wrapper aside #events ul li a:link{
+	color: #8E3557;
+}
+
+.wrapper aside #events ul li a:visited{
+	color: #C2BD86;
+}
+
+.wrapper aside #events ul li a:hover{
+	color:#FFF;
+}
+
+.wrapper aside #events ul li a:active{
+	color:#000;
+}
+
+/* end events section*/
+
+.wrapper aside .Hours ol {
+	list-style: url(images/liststyleimage.png);
+	text-align: justify;
+	margin-left: 40px;
+	padding-bottom: 30px;
+}
+/* end aside section*/
+
+
+/* begin content section*/
+.wrapper .content {
+	padding: 10px 0;
+	width: 70%;
+	float: right;
+	background-color: #FFF;
+	-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
+	background-image: url(images/background.png);
+	-moz-background-image: url(images/background.png);
+	-webkit-background-image: url(images/background.png);
+	background-repeat: no-repeat;
+	background-position: -85px -100px;
+}
+
+.wrapper .content .column { 
+	-moz-column-count:3;
+	-webkit-column-count: 3;
+	column-count: 3;
+
+}
+.wrapper .content .column h3 {
+	color: #8E3557;
+}
+
+
+.wrapper .content p img {
+	float: right;
+	margin: 5px 10px 2px 5px;
+	padding: 0 10 5;
+}
+
+
+.wrapper .content .column h4 {
+	color: #8E3557;
+}
+
+/* end content section*/
+
+/* begin gallery section*/
+
+
+.wrapper .content .gallery ul li {
+	float: left;
+	margin-left: 13px;
+}
+.wrapper .content .gallery ul li a {
+	border: 6px solid #88A33E;
+	display: block;
+	height: 67px;
+	width: 100px;
+	outline: 0;
+	
+
+}
+.wrapper .content .gallery ul li a:visited {
+	border-color: #88A33E;
+}
+	
+
+.wrapper .content .gallery ul li a:hover {
+	border-color:#8E3557;
+}
+wrapper .content .gallery ul li a:active {
+	border-color:#8E3557;
+}
+	
+
+.wrapper .content .gallery ul {
+	width: 550px;
+	border: 6px solid #C2BD86;
+	list-style: none;
+	margin: 24px auto;
+	overflow: hidden;
+	padding: 5px;
+}
+
+/* end gallery section*/
+
+
+/* begin Our Produce section*/
+.wrapper .content .column .Asparagus {
+	background-color: #88A33E;
+	-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
+	margin: 5px;
+}
+
+.wrapper .content .column .Strawberry {
+	background-color: #8E3557;
+	-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
+	margin: 5px;
+}
+
+
+.wrapper .content .column .Tomatoes {
+	background-color: #C2BD86;
+	filter:alpha(opacity=90)
+-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
+	margin: 5px;
+}
+.wrapper .content .column h4 {
+	margin-left: 80px;
+}
+
+/* end Our Produce section*/
+
+/* begin footer section*/
+
+.wrapper footer {
+	padding: 10px 0 15px;
+	background-color: #88A33E;
+	-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
+	clear: both;
+	background-image: url(images/footerbackground.png);
+	background-repeat: no-repeat;	
+}
+
+.wrapper footer ul {
+	list-style: none;
+	
+}
+.wrapper footer ul li {
+	display: inline;
+	margin-left: 100px;
+	padding: 50px 40px 10px;
+	color: #C2BD86;
+}
+
+
+.wrapper footer ul li a:link{
+	color: #8E3557;
+}
+
+.wrapper footer ul li a:visited{
+	color: #C2BD86;
+}
+
+.wrapper footer ul li a:hover{
+	color:#FFF;
+}
+
+.wrapper footer ul li a:active{
+	color:#000;
+}
+
+
+</style>
+

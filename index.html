@@ -1,214 +1,136 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <title>Farmers Market</title>
-
-<style type="text/css">
-body {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 12pt;
-	padding: 0px;
-	color: #000;
-	background-image: url(images/redtile.png);
-	color: #541E32;
-}
-.container .content p img {
-}
-
-ul, ol, dl { 
-	padding: 0;
-	margin: 0;
-}
-
-h1, h2, h3, h4, p {
-	margin-top: 0;	 
-	padding-right: 15px;
-	padding-left: 15px; 
-}
-
-a img { 
-	border: none;
-}
-
-a:link {
-	color:#414958;
-	text-decoration: underline; 
-}
-a:visited {
-	color: #4E5869;
-	text-decoration: underline;
-}
-a:hover, a:active, a:focus { 
-	text-decoration: none;
-}
-
-.container .sidebar aside {
-}
-
-.container {
-	width: 80%;
-	max-width: 1260px;
-	min-width: 780px;
-	background-color: #FFF;
-	margin: 0 auto;
-
-}
-
-.header {
-	background-color: #88A333;
-}
-
-.header #logo {
-	background-image: url(images/redtile.png);
-	text-indent: -9999px;
-	display: block;
-	height: 90px;
-	width: 200px;	
-}
-
-.sidebar {
-	float: right;
-	width: 20%;
-	background-color: #FFFFFF;
-	padding-bottom: 10px;
-}
-
-.container .sidebar #quote {
-	font-style: italic;
-	background-color: #C2BE86;
-	display: block;
-	margin: 5px 0px 5px 5px;
-	padding: 5px;
-}
-
-.content {
-	padding: 10px 0;
-	width: 80%;
-		float: right;
-}
-
-.content ul, .content ol { 
-	padding: 0 15px 15px 40px; 
-}
-
-ul.nav {
-	list-style: none; 
-	border-top: 1px solid #666; 
-	margin-bottom: 15px; 
-}
-
-ul.nav li {
-	border-bottom: 1px solid #8E3557;
-}
-
-ul.nav a, ul.nav a:visited {
-	padding: 5px 5px 5px 15px;
-	display: block;
-	text-decoration: none;
-	background-color: #C2BD86;
-	color: #000;
-}
-ul.nav a:hover, ul.nav a:active, ul.nav a:focus {
-	background-color: #8E3557;
-	color: #FFF;
-}
-
-.footer {
-	padding: 10px 0;
-	background-color: #88AE33;
-	clear: both;
-	font-size: 10px;
-	text-align: center;
-	display: block;
-}
-
-
-.fltrt {  
-	float: right;
-	margin-left: 8px;
-}
-.fltlft { 
-	float: left;
-	margin-right: 8px;
-}
-
-.clearfloat {
-	clear: both;
-	height: 0;
-	font-size: 1px;
-	line-height: 0px;
-	text-indent: -9999px;
-	display: block;
-}
-
-.container .content p img {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	border: 15px solid #88A33E;
-}
-</style>
+<link href="css/farmersmarket.css" rel="stylesheet" type="text/css">
 </head>
 
-<body><!--beginning of body-->
+<body>
 
-<!--beginning of header-->
-<div class="container">
-  <div class="header"><a href="#"><img src="images/logo.png" alt="Farmers Market logo" width="200" height="90" id="Farmerlogo" style="background-color: #A3b822; display:block;" /></a> 
-</div><!-- end of header -->
- 
- <!--beginning of sidebar-->
-  <div class="sidebar">
-    <!--beginning of nav (unordered list)-->
-    <ul class="nav">
-    
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Contact us</a></li>
-      <li><a href="#">Vendors</a>    </li>
-    </ul><!--end of nav (unordered list-->
-    
-    <!-- strong quote below nav-->
-    <h2>Sed plane dicit quod intellegit.</h2> 
-     <aside id="quote">
-      <blockquote>
+<div class="wrapper"><!--begin wrapper-->
+
+
+<div class="header"><!--begin header-->
+<p>Farmers Market</p><a><img src="images/logo.png" width="200" height="90" alt="Farmers Market logo"></a>
+
+</div><!--end header-->
+
+<nav><!--begin nav-->
+
+  <div><a href="#" class="button green">Home</a>
+    <a href="#" class="button green">About Us</a>
+    <a href="#" class="button green">Contact Us</a>
+    <a href="#" class="button green">Vendors</a>
+  </div>
+
+
+</nav><!--end nav-->
+
+<aside><!--begin aside-->
+<h2>Events</h2>
+
+<div id="events"><!--begin events-->
+      <ul>
+       <li><a href="filename.html">May</a></li>
+       <li><a href="filename.html">June</a></li>
+       <li><a href="filename.html">July</a></li>
+       <li><a href="filename.html">August</a></li>
+       <li><a href="filename.html">September</a></li>    
+      </ul>
+    </div><!--end events-->
+      
+<blockquote><!--begin blockquote-->
        <strong>
         <em>
           <cite>
-            &quot;Itaque ad tempus ad Pisonem omnes.  Quae quidem sapientes sequuntur duce natura tamquam videntes; Primum  Theophrasti, Strato, physicum se voluit; Hoc non est positum in nostra  actione. Paria sunt igitur. Istam voluptatem perpetuam quis potest  praestare sapienti? Hoc loco discipulos quaerere videtur, ut, qui asoti  esse velint, philosophi ante fiant. Restinguet citius, si ardentem  acceperit.&quot;  
-        </cite>
+            &quot;Itaque esse velint, philosophi ante fiant. Restinguet citius, si ardentem  acceperit.&quot;  
+          </cite>
         </em>
         </strong>
-       </blockquote>
-    </aside>
-  </div><!-- end of sidebar -->
+      </blockquote><!--end blockquote-->
+      
+ <p>ta ne hoc quidem modo paria peccata sunt. Hoc tu nunc in illo probas. Restincta enim sitis stabilitatem voluptatis habet, inquit, illa autem voluptas ipsius restinctionis in motu est. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. Sic enim censent, oportunitatis esse beate vivere. Pisone in eo gymnasio, quod Ptolomaeum vocatur, unaque nobiscum Q. Idemque diviserunt naturam hominis in animum et corpus. Quis non odit sordidos, vanos, leves, futtiles? Videsne quam sit magna dissensio? Re mihi non aeque satisfacit, et quidem locis pluribus. At enim hic etiam dolore. Quid est igitur, cur ita semper deum appellet Epicurus beatum et aeternum? Quae diligentissime contra Aristonem dicuntur a Chryippo. Quo plebiscito decreta a senatu est consuli quaestio Cn. Nosti, credo, illud: Nemo pius est, </p>
+ 
+ <div class="Hours">
+ <h4>Hours of Operation</h4>
+ <ol>
+ 	<li>Monday 9:00 am to 6:00 pm</li>
+    <li>Tuesday 9:00 am to 6:00 pm</li>
+    <li>Wednesday 9:00 am to 6:00 pm</li>
+    <li>Thursday 9:00 am to 6:00 pm</li>
+    <li>Friday 9:00 am to 6:00 pm</li>
+    <li>Saturday 9:00 am to 6:00 pm</li>
+ </ol>
+ </div>
+
+
+</aside><!--end aside-->
+
+<div class="content"><!--begin content-->
+
+<h1>Welcome to Farmers Market</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quicquid porro animo cernimus, id omne oritur a sensibus; Erat enim Polemonis. Sint ista Graecorum; Ergo illi intellegunt quid Epicurus dicat, ego non intellego? Duo Reges: constructio interrete. Inscite autem medicinae et <span style="color: #88aE33; font-weight: bold;">gubernationis ultimum cum ultimo sapientiae comparatur.</span> Cupit enim dícere nihil posse ad beatam vitam deesse sapienti.Ita graviter et severe voluptatem secrevit a bono. At iam decimum annum in spelunca iacet.<img src="images/bigTheProduceAisle.jpg" width="300" height="300" alt="The Produce Aisle"> Sed plane dicit quod intellegit. Quo plebiscito decreta a senatu est consuli quaestio Cn. Cuius ad naturam apta ratio vera illa et summa lex a philosophis dicitur. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Quia dolori non voluptas contraria est, sed doloris privatio. omne oritur a sensibus; Erat enim Polemonis. Sint ista Graecorum; Ergo illi intellegunt quid Epicurus dicat, ego non intellego? Duo Reges: constructio Ita graviter et severe voluptatem secrevit a bono. At iam decimum annum in spelunca iacet. Sed plane dicit quod intellegit. Quo plebiscito decreta a senatu est consuli quaestio Cn. Cuius ad naturam apta ratio vera illa et summa lex a philosophis dicitur. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Quia dolori non voluptas contraria est, sed doloris privatio. omne oritur a sensibus; beatam vitam deesse sapienti.Ita graviter et severe voluptatem secrevit a bono. At iam decimum annum in spelunca iacet. Sed plane dicit quod intellegit. Quo plebiscito decreta a senatu est consuli quaestio Cn. Cuius ad naturam apta ratio vera illa et summa lex a philosophis dicitur. Quae hic rei publicae vulnera inponebat, eadem ille sanabat. Quia dolori non voluptas contraria est, sed doloris privatio. omne oritur a sensibus; Erat enim Polemonis. Sint ista Graecorum; Ergo illi intellegunt quid Epicurus dicat, ego non intellego? Duo Reges: constructio Ita graviter et severe voluptatem secrevit a bono.</p>
+
+
+<h2>Our Produce</h2>
+
+<div class="gallery">
+ 
+ <ul>
+ 
+   <li><a href="images/largecutupvegetables.jpg"><img src="images/thumbcutupvegetables.jpg" width="100" height="67" alt="thumb     cut up vegetables"></a></li>
+   
+   <li><a href="images/largefreshprod.jpg"><img src="images/thumbfreshprod.jpg" width="100" height="67" alt="Fresh Produce"></a></li>
+   
+   <li> <a href="images/largekiwi.jpg"><img src="images/thumbkiwi.jpg" width="100" height="67" alt="Kiwi"></a></li>
+   <li><a href="images/largestrawberry.jpg"><img src="images/thumbstrawberry.jpg" alt="Strawberries" width="100" height="67"></a></li>
+   
+ </ul>
+ 
+ </div>
+
+<h3>What is in season now?</h3>
+
+    
+<div class="column"><!--begin column-->
+<h4>Asparagus</h4>
+<div class= "Asparagus">
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sin laboramus, quis est, qui alienae modum statuat industriae? Duo Reges: constructio  interrete. Cur id non ita fit?</p> 
+</div> 
+ <h4>Strawberries</h4>
+ <div class= "Strawberry">
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sin laboramus, quis est, qui alienae modum statuat industriae? Duo Reges: constructio  interrete. Cur id non ita fit?</p>
+ </div>
+ 
+ <h4>Tomatoes</h4>
+ <div class= "Tomatoes">
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sin laboramus, quis est, qui alienae modum statuat industriae? Duo Reges: constructio  interrete. Cur id non ita fit?</p>
+ </div>
+ </div><!--end column-->
+ 
+ <p> Erat enim Polemonis. Sint ista Graecorum; Ergo illi intellegunt quid Epicurus dicat, ego non intellego? Duo Reges: constructio Ita graviter etintellegunt quid Epicurus dicat, ego non intellego?intellegunt quid Epicurus dicat, ego non intellego?</p>
+
+ 
+
+</div><!--end content-->
+
+<footer><!--begin footer-->
+   <ul>
+      <li><a href="filename.html">Home</a></li>
+      <li><a href="filename.html">About Us</a></li>
+      <li><a href="filename.html">Contact Us</a></li>
+      <li><a href="filename.html">Vendors</a></li>    
+    </ul>
   
-  <!--beginning of main content-->
-  <div class="content">
-    <h1>Welcome to Farmers Market</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non enim  ipsa genuit hominem, sed accepit a natura inchoatum. Quod quidem iam fit  etiam in Academia. </p>
-    <p>Sed plane dicit quod intellegit. <span>Itaque ad tempus ad Pisonem omnes.  Quae quidem sapientes sequuntur duce  </span>natura tamquam videntes; Primum  Theophrasti, Strato, physicum se voluit; Hoc non est positum in nostra  actione. </p>
-    <h2>Our Produce</h2>
-    <p><img src="images/fruit4.jpg" width="489" height="512" alt="produce"></p>
-    <p><span style="color: #88aE33; font-weight: bold;">scripta eius probitate</span> ipsius  ac moribus. Quod vestri non item. Quae cum magnifice primo dici  viderentur, considerata minus probabantur. Quasi vero, inquit, perpetua  oratio rhetorum solum, non etiam philosophorum sit. Eiuro, inquit  adridens, iniquum, hac quidem de re; Hoc dixerit potius Ennius: Nimium  boni est, cui nihil est mali. Unum est sine dolore esse, 
-</p>
-    <h3>What is in season</h3>
-    <!--beginning of ordered list-->
-    <ol>
-    	<li>Non enim ipsa genuit hominem, sed accepit a natura inchoatum. Ita  redarguitur ipse a sese, convincunturque scripta eius probitate ipsius  ac moribus.</li> 
-    	<li>Quod vestri non item. Quae cum magnifice primo dici  viderentur, considerata minus probabantur.</li> 
-        <li>Quasi vero, inquit, perpetua  oratio rhetorum solum, non etiam philosophorum sit. Eiuro, inquit  adridens, iniquum, hac quidem de re; Hoc dixerit potius Ennius: Nimium  boni est, cui nihil est mali. Unum est sine dolore esse, alterum cum  voluptate.			</li> 
-    </ol>
-    <!--end of ordered list-->
-<h4>Hours of Operation</h4>
-<p>Istam voluptatem, inquit, Epicurus ignorat? Quod ea non occurrentia  fingunt, vincunt Aristonem; Si qua in iis corrigere voluit, deteriora  fecit. Quod autem in homine praestantissimum atque optimum est, id  deseruit. Urgent tamen et nihil remittunt. Sin laboramus, quis est, qui  alienae modum statuat industriae.</p>
-  </div><!-- end of main content -->
-  
-  <!--beginning of footer-->
-  <div class="footer"><a href="index.html">Site maintained by Farmers Market</a></div> 
-  
-  <!-- end of footer -->
-</div><!-- end of main content -->
-</body><!--end of body-->
+</footer><!--end footer-->
+
+
+
+</div><!--end wrapper-->
+
+
+
+</body>
 </html>
