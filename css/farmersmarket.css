@@ -39,7 +39,6 @@ body {
 /* end wrapper section*/
 
 /* begin h,ul,ol...misc. section section*/
-
 .content h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0%;	 
 	padding-right: 0.21428571428571%; /* 15px / 70%*/
@@ -55,11 +54,11 @@ body {
 }
 
 .content h1 {
-	font-size: 1.5em; /* This was 24 px. 1.5 em came from 24px divided by 16px.  Target (h1) / immediate container (16px)*/
+	font-size: 1.375em; /* This was 22 px. / 16px*/
 }
 
 .content h2 {
-	font-size: 1.3755em; /* This was 22 px.  divided by 16px.  Target (h2) / immediate container (16px)*/
+	font-size: 1.25em; /* This was 20 px.  divided by 16px.  Target (h2) / immediate container (16px)*/
 }
 
 aside h1, h2{
@@ -68,12 +67,9 @@ aside h1, h2{
 	font-weight: bold;
 	margin: 0.66666666666667%; /*20px / 30%*/	
 }
-aside h1{
-	font-size: 1.5;
-}
 
 aside h2{
-	font-size: 1.3755em; /* 22px / 16px*/
+	font-size: 1.25em; /* 22px / 16px*/
 }
 h2 {
 text-shadow:4px 4px 2px gray;
@@ -160,7 +156,13 @@ aside {
 	-webkit-box-shadow: .6em 4px #666;
 	-moz-box-shadow: .6em #666;
 	box-shadow: .6em #666;
-} 
+}
+cite {
+	font-size: 0.9375em;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
 aside p {
 	padding-left: 4%;
 	padding-right: 3%;
@@ -383,6 +385,7 @@ footer ul li {
 	margin-left: 14.936507936508%;
 	padding: 0.03968253968254% 0.03968253968254%;  /* 50px 40px 10px all divided by 1260px */
 	color: #C2BD86;
+	font-size: 0.625em;
 }
 
 
