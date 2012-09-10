@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{font: 100%/1.5 Georgia, "Times New Roman", Times, serif;/*100% = 16px*/
+	max-width: 960 px;
+	margin: 36px auto;
+	
+}
+h1{
+	font-weight: normal;
+	color: #9933FF;
+	font-size: 1.5em;/* This was 24 px. 1.5 em came from 24px divided by 16px.  Target (h1) / immediate container (16px)*/
+
+}
+
+p{ font-size: 0.8125em; /*This is 13 px / 16px*/
+}
+
+#wrapper{
+	width: 100%;/*this was based on 900 px*/
+	margin: 0 auto;
+	overflow: hidden;
+	border: 1px dashed #395;
+	background-color: #CCC;
+}
+section{
+	float:left;
+	width: 62.888888888889%; /*566px/900px;*/
+	margin-left: 1.111111111111%; /*10px / 900px*/
+}
+
+aside{
+	float:right;
+	width: 36.777777777778% /*331px / 900px*/
+	padding: 4.531722054381%; /*15px / 331px.  PADDING IS DIVIDED BY THE ASIDE ELEMENT WIDTH, NOT THE PARENT 900 PX*/
+}
+
+h1 p{
+	padding: 0 15px;
+} 
+
+#mypicture{
+	width: 53.003533568905%; /*300px (the width of image / 566px (the section that it is in)*/
+	float:left;
+}
+
+#mypicture img{
+	max-width: 100%;
+}
+/*Tablet Portrait size to Standard 960 (Devices and Browsers)*/
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	#wrapper{ background-color:#039;
+	}	
+}
+	
+/*Mobile landscape size to Tablet Portrait size (Devices and Browsers)*/
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	#wrapper{
+	background-color: #0C6;
+}
+}
+	
+/*Mobile Portrait size to Mobile Landscape size (Devices and Browsers)*/
+@media screen and (max-width: 479px) {
+	#wrapper{
+	background-color: #FC3;
+	}
+	#mypicture{ display:none;
+	}
+	section, aside { float:none;
+	width: 90%;
+	}
+}
