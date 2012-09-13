@@ -414,6 +414,11 @@ footer ul li a:active{
 	font-size: 1.1255em; /* 18px divided by 16px.  Target (h1) / immediate container (16px)*/
 	margin: 0.28571428571429%; /*20px / 70%*/	
 }
+
+.content  h2{
+	font-size: 1.0em; /* 18px divided by 16px.  Target (h1) / immediate container (16px)*/
+	margin: 0.28571428571429%; /*20px / 70%*/	
+}
 content h3{
 	font-size:0.6875em; /* 11px / 16px*/
 }
@@ -426,6 +431,12 @@ aside h2{
 	font-size: 1.0em; /* 14px divided by 16px.*/
 	margin: 0.66666666666667%; /*20px / 30%*/		
 }
+
+.button {
+	font: 0.75em/100% Georgia, "Times New Roman", Times, serif; /* 12px / 16px */
+
+}
+
 .Hours ol {
 	font-size: 0.75em; /* 15px divided by 16px. */
 	padding-right: 2.6666666666667%; /*8px / 30%*/
