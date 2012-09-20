@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/* CSS Document */
-
-@import url("webfonts/HarabaraHand/stylesheet.css");
 
 /*Colors Green #88A33E Raspberry #8E3557 light brown #C2BD86*/
 
@@ -22,12 +19,13 @@ body {
 .header {
 	text-indent: -79.3571428571429%; /*-9999px / 1260px*/
 	background-color: #88A33E;
+	color: #88A33E;
 	margin: 0%;
 	padding: 0%;
 	height: 0.0952380952381%; /*120px /1260px*/
-	-webkit-border-radius: 0.6em;
-	-moz-border-radius: 0.6em;
-	border-radius: 0.6em;
+	-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
 	background-image: url(../images/background.png);
 	background-repeat: repeat-x;
 	background-position: 370px 50px;
@@ -228,7 +226,7 @@ aside #events ul {
 	list-style: url(../images/liststyleimage.png);
 	text-align: justify;
 	margin-left: 1.5%; /*45px / 30%*/
-	padding-bottom: 3%; /* 30px /30%*/
+	padding-bottom: 1%; /* 30px /30%*/
 	margin-right: 0.33333333333333% /*10px / 30%*/
 }
 /* end aside section*/
@@ -257,7 +255,8 @@ aside #events ul {
 	
 }
 .column h3 {
-	color: #8E3557;	
+	color: #8E3557;
+	
 }
 
 .content p img {
@@ -289,7 +288,10 @@ aside #events ul {
 .gallery ul li a {
 	border: 6px solid #88A33E;
 	display: block;
-	outline: 0;	
+	height: 67px; /*67px / 70% (the container)*/
+	width: 100px; /*100px / 70% (the container)*/
+	outline: 0;
+	
 
 }
 .gallery ul li a:visited {
@@ -298,10 +300,10 @@ aside #events ul {
 	
 
 .gallery ul li a:hover {
-	border-color: #8E3557;
+	border-color:#8E3557;
 }
 .gallery ul li a:active {
-	border-color: #8E3557;
+	border-color:#8E3557;
 }
 	
 
@@ -309,12 +311,9 @@ aside #events ul {
 	width: 78.5714%; /* 550px / 70% content container*/
 	border: 6px solid #C2BD86;
 	list-style: none;
-	margin: auto;/* 24px / 550px (size of gallery)*/
-	overflow: hidden; /* 5px / 550px (the size of the gallery)*/
-	padding-top: 0.00909091%;
-	padding-right: 0.00909091%;
-	padding-left: 0.00909091%;
-	height: auto;
+	margin: 0.0436364% auto 5.0436364%;/* 24px / 550px (size of gallery)*/
+	overflow: hidden;
+	padding: 0.00909091%; /* 5px / 550px (the size of the gallery)*/	
 }
 
 /* end gallery section*/
@@ -333,9 +332,9 @@ aside #events ul {
 
 .Strawberry {
 	background-color: #8E3557;
-	-webkit-border-radius: 0.6em;
-	-moz-border-radius: 0.6em;
-	border-radius: 0.6em;
+	-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
 	margin: 0.7142857142857%; /* 5px / 70% */
 	padding-left: 14.285714285714%;
 	padding-right: 14.285714285714%;
@@ -349,9 +348,9 @@ aside #events ul {
 -moz-opacity:0.5;
 	-khtml-opacity: 0.5;
 	opacity: 0.5;
-	-webkit-border-radius: 0.6em;
-	-moz-border-radius: 0.6em;
-	border-radius: 0.6em;
+	-webkit-border-radius: .6em;
+	-moz-border-radius: .6em;
+	border-radius: .6em;
 	margin: 0.7142857142857%; /* 5px / 70% */
 	padding-left: 14.285714285714%;
 	padding-right: 14.285714285714%;
@@ -411,19 +410,38 @@ input:focus {
 	background-color: #C2BD86;
 	
 }
+.form.container1 {
+	padding-left: 16%;
+}
 
 fieldset {
 	background-color: #88A33E;
 	border: 4px solid #883354;
-	-webkit-border-radius: .6em;
-	-moz-border-radius: .6em;
-	border-radius: .6em;
-	padding-left:20%;
+	-webkit-border-radius: 0.6em;
+	-moz-border-radius: 0.6em;
+	border-radius: 0.6em;
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-left: 5%;
+	width: 40%;		
+}
 
+textarea {
+	background-color: #FFFFFF;
+	border-color: #8E3557;
+	color: #000;
+}
+
+aside fieldset {
+	padding-left: 10%;
+	padding-right:10%;
+	
+	
 }
 
 legend {
-	font-family:HarabaraHand;
+	font-family: HarabaraHand;
+	color: #000000;	
 }
 
 input {
@@ -504,7 +522,9 @@ footer ul li a:active{
 }
 content h3{
 	font-size:0.6875em; /* 11px / 16px*/
+	
 }
+
 aside h1{
 	font-size: 1.0em; /* 18px divided by 16px.  Target (h1) / immediate container (16px)*/
 	margin: 0.66666666666667%; /*20px / 30%*/	
@@ -513,6 +533,9 @@ aside h1{
 aside h2{
 	font-size: 1.0em; /* 14px divided by 16px.*/
 	margin: 0.66666666666667%; /*20px / 30%*/		
+}
+aside h3 {
+	padding-left: 30%;
 }
 
 .button {
@@ -545,10 +568,44 @@ table{
 	font-size: 0.625em; /*10px / 16px*/
 		
 }
+.content{
+	float:none;
+	width: 100%;
+	
+}
+aside {
+	float:none;
+	width: 100%;
+
+}
+
+.form.container1 {
+	padding-left: 5%;
+	padding-right: 7%;
+}
+
+.form.container2 {
+	padding-left: 20%;
+	padding-right: 18%;
+}
+
+legend {
+	font-size: 0.75em;
+}
 
 footer {
 	font-size: 0.625em;
 }
+
+fieldset { 
+	padding-left: 15%;
+}
+aside fieldset {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+
 }
 	
 /*Mobile landscape size to Tablet Portrait size (Devices and Browsers)*/
@@ -627,7 +684,54 @@ aside {
 
 nav { padding-left: 20%;
 }
+
+th {
+	text-align: left;
+	background-color: #C2BD86;
+	padding-right: 10%;
+		
 }
+
+td{
+	border: 1px solid #000;
+	padding: 0.2em;
+}
+
+.holder {
+	padding-left: 5%;
+}
+
+legend {
+	font-size: 0.75em;
+}
+
+.form.container1 {
+	padding-left: 4%;
+	padding-right: 5%;
+	margin-right: 4%;
+	/*font-size: 0.625%;*/
+	
+}
+
+.form.container2 {
+	padding-left: 10%;
+	padding-right: 10%;
+	margin-left: 6%;
+}
+
+fieldset { 
+	padding-left: 15%;
+	
+
+}
+
+h3 { text-indent: 10%;
+
+}
+
+
+}
+
 	
 /*Mobile Portrait size to Mobile Landscape size (Devices and Browsers)*/
 @media screen and (max-width: 479px) {
@@ -640,7 +744,8 @@ footer {
 	background-image:none;
 }
 .header {
-	background-image: none;
+	background-image: url(../images/background.png);
+	background-color: #88A33E;
 }
 
 .content h1{
@@ -652,13 +757,13 @@ footer {
 	font-size:.75em; /* 12px divided by 16px.  Target (h1) / immediate container (16px)*/
 }
 .content h3{
-	font-size:0.75em; /* 10px / 16px*/
+	font-size:0.625em; /* 10px / 16px*/
 	padding-left: 30%;
 }
 
 aside h2 {font-size:.75em; /* 12px / 16px*/
 }
-aside h4 {font-size:0.85em; /* 9px / 16px*/
+aside h4 {font-size:0.5625em; /* 9px / 16px*/
 }
 
 .Hours ol {
@@ -668,13 +773,13 @@ aside h4 {font-size:0.85em; /* 9px / 16px*/
 }
 
 .Hours ol li{
-	font-size: 0.75em; /* 11px divided by 16px.*/ 
+	font-size: 0.6875em; /* 11px divided by 16px.*/ 
 }
-.Hours h4 {0.675em; /* 09px divided by 16px. */
+.Hours h4 {0.562em; /* 09px divided by 16px. */
 }
 
 #events ul li {
-	font-size: 0.75em; /* 10px divided by 16px. */
+	font-size: 0.625em; /* 10px divided by 16px. */
 	padding-right: 4%;
 	padding-left: 0%;
 	
@@ -688,17 +793,17 @@ aside h4 {font-size:0.85em; /* 9px / 16px*/
 
 .column {
 	width:  100%;
-	font-size: .875em; /* 12px / 16px*/
+	font-size: .75em; /* 12px / 16px*/
 	
 }
 
 blockquote {
-	font-size: 0.75em; /* 12px / 16px*/
+	font-size: .75em; /* 12px / 16px*/
 	padding-left:2.1428571428571%; /* 15px /70%*/
 }
 
 footer {
-	font-size: 0.675em;
+	font-size: 0.5625em;
 	padding-right: 25%;
 	padding-left: 10%;
 	text-align: center;
@@ -714,12 +819,8 @@ aside {
 	width: 100%;
 }
 
-aside p{ font-size: 0.75em; /*14px /16px*/
-}
-aside {
-
 .button {
-	font: 0.75em/100% Georgia, "Times New Roman", Times, serif;
+	font: 0.6255em/100% Georgia, "Times New Roman", Times, serif;
 	padding: 0.5em 2em 0.55em;
 }
 
@@ -732,8 +833,43 @@ nav { padding-left: 30%;
 	padding-right: 10%;
 }
 
+table{
+	font-size: 0.5625em;
+	
+}
+
+.holder {
+	padding-left:0%;
+}
+
+td {
+	padding:0%;
+}
+
+.form.container1 {
+	font-size: 0.562;
+	margin-right: 85%;
+	
+}
+
+.form.container2 {
+	margin-right: 30%;
+	margin-left: 10%;
+}
 
 
+fieldset {
+	padding-right: 5%;
+	padding-left: 5%;	
+	
+}
 
+textarea {
+	width: 90%;
+	padding-left: 8%;
+	
+}
+
+	
 	
 }
