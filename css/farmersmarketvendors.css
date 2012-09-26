@@ -495,9 +495,10 @@ footer ul li a:active{
 
 /*Tablet Portrait size to Standard 960 (Devices and Browsers)*/
 @media screen and (min-width: 768px) and (max-width: 959px) {
-.content{ background-color:#039;
+/*.content{ background-color:#039;
 	
 }
+*/
 .content h1, h2{
 	font-size: 1.1255em; /* 18px divided by 16px.  Target (h1) / immediate container (16px)*/
 	margin: 0.28571428571429%; /*20px / 70%*/	
@@ -577,10 +578,12 @@ footer {
 	
 /*Mobile landscape size to Tablet Portrait size (Devices and Browsers)*/
 @media screen and (min-width: 480px) and (max-width: 767px) {
-.content{
+/*.content{
 	background-color: #0C6;
 	
+
 }
+*/
 
 .content h1{
 	font-size: 1.0em; /* 16px / 16px*/
@@ -672,9 +675,10 @@ td{
 	
 /*Mobile Portrait size to Mobile Landscape size (Devices and Browsers)*/
 @media screen and (max-width: 479px) {
-.content{
+/*.content{
 	background-color: #FC3;
 	}
+	*/
 .content { background-image:none;
 }
 footer {
